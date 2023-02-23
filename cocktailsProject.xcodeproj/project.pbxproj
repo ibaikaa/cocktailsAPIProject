@@ -154,33 +154,10 @@
 		8C4A109B29A421870008E663 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8C4A109C29A4218E0008E663 /* Authorization */,
+				8CEE5DD929A7D02900D67650 /* Authorization */,
 				8CEE5DC129A7A0E400D67650 /* LoggedIn */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		8C4A109C29A4218E0008E663 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				8C4A109D29A421940008E663 /* SignIn */,
-				8C4A109E29A4219A0008E663 /* SignUp */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
-		8C4A109D29A421940008E663 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
-		8C4A109E29A4219A0008E663 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		8C4A109F29A421AF0008E663 /* DrinksMenu */ = {
@@ -361,6 +338,13 @@
 				8CEE5DD729A7C0C900D67650 /* CartViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8CEE5DD929A7D02900D67650 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

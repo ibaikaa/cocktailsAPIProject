@@ -1,0 +1,28 @@
+PODS:
+  - Cosmos (23.0.0)
+  - Kingfisher (7.6.1)
+  - PaddingLabel (1.2)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - Kingfisher
+  - PaddingLabel
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - Kingfisher
+    - PaddingLabel
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Kingfisher: 93a3c6d0d551658a31e19f21747e1d15cb39d525
+  PaddingLabel: 21ab5282c780366018b04c30e3920c2f55a2fd14
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 54ae91eac11a26ed8a809000ac7e11c06def2820
+
+COCOAPODS: 1.11.3

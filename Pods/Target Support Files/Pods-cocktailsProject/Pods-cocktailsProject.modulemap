@@ -1,0 +1,6 @@
+framework module Pods_cocktailsProject {
+  umbrella header "Pods-cocktailsProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

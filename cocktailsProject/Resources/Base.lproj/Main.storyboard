@@ -928,11 +928,6 @@
             <point key="canvasLocation" x="-422" y="677"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="THQ-Tu-QCs">
-            <size key="intrinsicContentSize" width="117.66666666666667" height="29"/>
-        </designable>
-    </designables>
     <resources>
         <image name="cart.circle.fill" catalog="system" width="128" height="123"/>
         <image name="checkmark.bubble.fill" catalog="system" width="128" height="110"/>
