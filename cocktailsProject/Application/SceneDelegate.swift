@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -15,9 +16,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
+        
+        // Define starter screen
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabBar = storyboard.instantiateViewController(withIdentifier: "main_tabBar")
-        window?.rootViewController = mainTabBar
+        if Auth.auth().currentUser == nil {
+            let vc = storyboard
+                .instantiateViewController(
+                    withIdentifier: SignInViewController.identifier
+                )
+            window?.rootViewController = vc
+        } else {
+            let tabBarVC = storyboard
+                .instantiateViewController(
+                    withIdentifier: MainTabBarController.identifier
+                )
+            window?.rootViewController = tabBarVC
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

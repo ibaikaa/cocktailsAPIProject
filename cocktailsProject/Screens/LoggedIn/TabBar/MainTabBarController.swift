@@ -8,7 +8,8 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-    
+    class var identifier: String { String(describing: self) }
+
     private var itemsImages: [UIImage] = [
         .init(systemName: "person.circle")!,
         .init(systemName: "plus.square")!,
@@ -31,7 +32,6 @@ class MainTabBarController: UITabBarController {
         icon.resizeImage(to: CGSize(width: 40, height: 40))
     }
     
-    
     private func setTabBarAppearance() {
         // Colors configuring for UITabBar
         tabBar.backgroundColor = .mainBeige
@@ -47,13 +47,10 @@ class MainTabBarController: UITabBarController {
         tabBar.scrollEdgeAppearance = tabBar.standardAppearance
         
         tabBar.itemPositioning = .centered
-
     }
-    
     
     override func loadView() {
         super.loadView()
-        print("loaded tab bar")
         setTabBarAppearance()
         configureVCs()
     }

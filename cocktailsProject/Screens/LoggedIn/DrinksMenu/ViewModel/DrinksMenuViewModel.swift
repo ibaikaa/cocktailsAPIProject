@@ -15,7 +15,6 @@ final class DrinksMenuViewModel {
     private var networkManager: NetworkManager
     
     private var currentLetter: String
-    
     private var currentLetterUnicodeValue: UInt32 = 97 {
         didSet {
             let scalar = UnicodeScalar(currentLetterUnicodeValue)!
@@ -97,6 +96,7 @@ final class DrinksMenuViewModel {
     
     public func getDrinksWithNextLetter() {
         currentLetterUnicodeValue += 1
+        guard currentLetter != "z" else { return }
         getDrinksWithLetter()
     }
     
