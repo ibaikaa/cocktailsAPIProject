@@ -6,6 +6,10 @@ target 'cocktailsProject' do
   use_frameworks!
 
   # Pods for cocktailsProject
+pod 'FirebaseAnalytics'
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
+pod 'FirebaseAuth'
 pod 'SnapKit'
 pod 'Cosmos', '~> 23.0'
 pod 'Kingfisher'

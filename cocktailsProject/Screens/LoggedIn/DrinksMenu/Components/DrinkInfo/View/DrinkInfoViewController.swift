@@ -55,6 +55,19 @@ class DrinkInfoViewController: UIViewController {
         navigationItem.leftBarButtonItem = customBackBarButton
     }
     
+    
+    @IBAction func rateDrinkButtonTapped(_ sender: Any) {
+        
+    }
+    
+    private func showRateAlert() {
+        let alert = UIAlertController(
+            title: "Rate drink",
+            message: "Please, fill all the fields to rate this cocktail!",
+            preferredStyle: .alert
+        )
+    }
+    
     private func updateUI() {
         likeDrinkButton.cornerRadius = likeDrinkButton.bounds.width / 2
         addDrinkToCartButton.cornerRadius = addDrinkToCartButton.bounds.width / 2

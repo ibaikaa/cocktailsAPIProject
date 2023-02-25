@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hzV-NB-oz6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qOx-MH-6Na">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -56,46 +57,46 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-Ml-fdj">
                                 <rect key="frame" x="20" y="297" width="353" height="402"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBG-JA-o0W">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBG-JA-o0W">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="50.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter e-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JKj-FG-Jem">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JKj-FG-Jem">
                                         <rect key="frame" x="0.0" y="50.333333333333314" width="353" height="50.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neR-CL-C8b">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neR-CL-C8b">
                                         <rect key="frame" x="0.0" y="100.66666666666669" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9KF-4w-L8Z">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your surname" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9KF-4w-L8Z">
                                         <rect key="frame" x="0.0" y="150.66666666666669" width="353" height="50.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-QZ-S3B">
-                                        <rect key="frame" x="0.0" y="201" width="353" height="50.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-QZ-S3B">
+                                        <rect key="frame" x="0.0" y="201" width="353" height="50.333333333333371"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your surname" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aQw-1W-yS4">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start with country code" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aQw-1W-yS4">
                                         <rect key="frame" x="0.0" y="251.3333333333334" width="353" height="50.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46C-8W-eUz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46C-8W-eUz">
                                         <rect key="frame" x="0.0" y="301.66666666666663" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phone number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FFs-4R-KN3">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SMS-code will come to your message" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FFs-4R-KN3">
                                         <rect key="frame" x="0.0" y="351.66666666666663" width="353" height="50.333333333333314"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
@@ -123,6 +124,9 @@
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOut:" destination="jmJ-TM-UnI" eventType="touchUpInside" id="Vou-Pk-zaS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xum-Fj-x7B">
                                 <rect key="frame" x="20" y="719" width="157.33333333333334" height="40"/>
@@ -353,6 +357,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="blackProjectShadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
@@ -443,7 +448,7 @@
             </objects>
             <point key="canvasLocation" x="576.33587786259545" y="676.76056338028172"/>
         </scene>
-        <!--Item-->
+        <!--Cart View Controller-->
         <scene sceneID="Ha8-fm-jeA">
             <objects>
                 <viewController id="fbC-Ek-3Wm" customClass="CartViewController" customModule="cocktailsProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -500,7 +505,7 @@
                             <constraint firstItem="6CU-9n-XKM" firstAttribute="leading" secondItem="5Ka-dF-lDk" secondAttribute="leading" id="ziR-vl-DDx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ih2-sr-fpY"/>
+                    <tabBarItem key="tabBarItem" title="" id="ih2-sr-fpY"/>
                     <connections>
                         <outlet property="drinksTableView" destination="6CU-9n-XKM" id="4wL-Tg-anm"/>
                     </connections>
@@ -544,6 +549,9 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="blackProjectShadow" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rateDrinkButtonTapped:" destination="GGL-8Y-8fQ" eventType="touchUpInside" id="y3Q-nd-eJd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCi-gb-PTw">
                                         <rect key="frame" x="313" y="-30" width="60" height="60"/>
@@ -890,7 +898,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="Ul7-Cm-Qsm">
             <objects>
-                <tabBarController storyboardIdentifier="main_tabBar" id="hzV-NB-oz6" customClass="MainTabBarController" customModule="cocktailsProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="hzV-NB-oz6" customClass="MainTabBarController" customModule="cocktailsProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bEe-rk-wHk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -906,7 +914,147 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lde-4E-8sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-421" y="-292"/>
+            <point key="canvasLocation" x="-422" y="-292"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="i89-M8-Ern">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="oh8-do-RzB" customClass="SignInViewController" customModule="cocktailsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UDn-ua-FcL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-Yh-WGB">
+                                <rect key="frame" x="20" y="133" width="353" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-qA-zjc">
+                                <rect key="frame" x="50" y="619.66666666666663" width="293" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a6Z-ah-t9p"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with phone number">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="blackProjectShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInTapped:" destination="oh8-do-RzB" eventType="touchUpInside" id="l4Z-OJ-Pzj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gc-HX-07j">
+                                <rect key="frame" x="50" y="509.33333333333326" width="293" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fKw-84-s1m"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkmark.seal.fill" catalog="system" imagePlacement="trailing" title="Get code" imagePadding="10">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="blackProjectShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkCodeTapped:" destination="oh8-do-RzB" eventType="touchUpInside" id="K20-Fo-eEh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCs-fR-cDV">
+                                <rect key="frame" x="20" y="204" width="353" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start with country code!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXw-H9-oBG">
+                                <rect key="frame" x="20" y="252" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BhR-u7-yES"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS-code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-gG-E4G">
+                                <rect key="frame" x="20" y="322" width="353" height="27.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code will come to your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9E-ra-kax">
+                                <rect key="frame" x="20" y="369.33333333333331" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mFf-ma-MWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-uc-ceX">
+                                <rect key="frame" x="20" y="569.33333333333337" width="353" height="30.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aIT-cO-GfN"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhb-qA-zjc" firstAttribute="top" secondItem="ABt-uc-ceX" secondAttribute="bottom" constant="20" id="2Pt-aq-mc7"/>
+                            <constraint firstItem="ABt-uc-ceX" firstAttribute="top" secondItem="9Gc-HX-07j" secondAttribute="bottom" constant="20" id="6lj-kE-wwh"/>
+                            <constraint firstItem="9Gc-HX-07j" firstAttribute="top" secondItem="K9E-ra-kax" secondAttribute="bottom" constant="100" id="7G0-RP-QHZ"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="ABt-uc-ceX" secondAttribute="trailing" constant="20" id="7bv-tu-eZe"/>
+                            <constraint firstItem="wCs-fR-cDV" firstAttribute="top" secondItem="EVF-Yh-WGB" secondAttribute="bottom" constant="30" id="8ng-Kw-aHg"/>
+                            <constraint firstItem="ABt-uc-ceX" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="Fte-Ns-Cil"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="EVF-Yh-WGB" secondAttribute="trailing" constant="20" id="RY1-1l-2s0"/>
+                            <constraint firstItem="Nez-gG-E4G" firstAttribute="top" secondItem="AXw-H9-oBG" secondAttribute="bottom" constant="30" id="U0Q-wF-zkf"/>
+                            <constraint firstItem="bhb-qA-zjc" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="50" id="Wsw-1B-NQb"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="bhb-qA-zjc" secondAttribute="trailing" constant="50" id="WzR-63-QjW"/>
+                            <constraint firstItem="AXw-H9-oBG" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="Z2N-OJ-xX8"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="Nez-gG-E4G" secondAttribute="trailing" constant="20" id="bGt-FN-qzd"/>
+                            <constraint firstItem="EVF-Yh-WGB" firstAttribute="top" secondItem="aIT-cO-GfN" secondAttribute="top" constant="30" id="dpD-HN-Q4L"/>
+                            <constraint firstItem="EVF-Yh-WGB" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="eKU-Mj-S4g"/>
+                            <constraint firstItem="AXw-H9-oBG" firstAttribute="top" secondItem="wCs-fR-cDV" secondAttribute="bottom" constant="20" id="fLu-Ob-ol7"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="9Gc-HX-07j" secondAttribute="trailing" constant="50" id="gNk-rc-Oyr"/>
+                            <constraint firstItem="9Gc-HX-07j" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="50" id="ily-cQ-RBk"/>
+                            <constraint firstItem="K9E-ra-kax" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="l26-dL-n5g"/>
+                            <constraint firstItem="wCs-fR-cDV" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="o5x-CA-8vV"/>
+                            <constraint firstItem="K9E-ra-kax" firstAttribute="top" secondItem="Nez-gG-E4G" secondAttribute="bottom" constant="20" id="rRX-Gf-va9"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="K9E-ra-kax" secondAttribute="trailing" constant="20" id="s62-53-swa"/>
+                            <constraint firstItem="Nez-gG-E4G" firstAttribute="leading" secondItem="aIT-cO-GfN" secondAttribute="leading" constant="20" id="vfI-en-zcq"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="wCs-fR-cDV" secondAttribute="trailing" constant="20" id="xGZ-kM-Gi9"/>
+                            <constraint firstItem="aIT-cO-GfN" firstAttribute="trailing" secondItem="AXw-H9-oBG" secondAttribute="trailing" constant="20" id="zyB-NB-UjI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MqX-QU-nuf"/>
+                    <connections>
+                        <outlet property="getCodeButton" destination="9Gc-HX-07j" id="5hY-9E-K5e"/>
+                        <outlet property="phoneNumberTextField" destination="AXw-H9-oBG" id="x0N-TS-Cfw"/>
+                        <outlet property="signInButton" destination="bhb-qA-zjc" id="rQ4-0g-vHO"/>
+                        <outlet property="smsCodeTextField" destination="K9E-ra-kax" id="s1D-DM-aax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63r-o4-9cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2169" y="-292"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BR8-dI-duP">
@@ -927,10 +1075,34 @@
             </objects>
             <point key="canvasLocation" x="-422" y="677"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C0M-ji-ZQ8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qOx-MH-6Na" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O1a-ID-WIS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oh8-do-RzB" kind="relationship" relationship="rootViewController" id="Yhl-eH-Jym"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkF-yX-QFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2170" y="-1089"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="THQ-Tu-QCs">
+            <size key="intrinsicContentSize" width="117.66666666666667" height="29"/>
+        </designable>
+    </designables>
     <resources>
         <image name="cart.circle.fill" catalog="system" width="128" height="123"/>
         <image name="checkmark.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
