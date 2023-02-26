@@ -21,9 +21,7 @@ final class AuthManager {
     private let auth = Auth.auth()
     private let provider = PhoneAuthProvider.provider()
     private var verificationID: String?
-    
-    // MARK: - Public Methods
-    
+        
     func tryToSendSMSCode(phoneNumber: String, completion: @escaping (Result<Void, Error>) -> Void) {
         provider.verifyPhoneNumber(phoneNumber, uiDelegate: nil) { [weak self] verificationID, error in
             guard let verificationID = verificationID, error == nil else {
