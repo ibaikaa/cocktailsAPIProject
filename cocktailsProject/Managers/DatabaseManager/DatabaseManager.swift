@@ -12,10 +12,6 @@ public struct DatabaseCollection {
     static let cocktails = "Cocktails"
 }
 
-public struct DatabaseDocument {
-    static let postRequest = "Uploaded With Post Request"
-}
-
 final class DatabaseManager {
     static let shared = DatabaseManager()
     
