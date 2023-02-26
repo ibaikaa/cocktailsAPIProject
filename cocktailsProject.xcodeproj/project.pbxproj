@@ -128,12 +128,13 @@
 		8C4A107F29A41D2D0008E663 /* cocktailsProject */ = {
 			isa = PBXGroup;
 			children = (
+				8C4A109429A41D3A0008E663 /* Application */,
+				8C872C5229AAED2E0030EC8D /* Common */,
+				8C4A109529A41F380008E663 /* Extensions */,
 				8C68357329A7DCB7002D60A7 /* GoogleService-Info.plist */,
 				8C4A10AF29A429B30008E663 /* Managers */,
-				8C4A109B29A421870008E663 /* Screens */,
-				8C4A109529A41F380008E663 /* Extensions */,
-				8C4A109429A41D3A0008E663 /* Application */,
 				8C4A109929A421560008E663 /* Resources */,
+				8C4A109B29A421870008E663 /* Screens */,
 			);
 			path = cocktailsProject;
 			sourceTree = "<group>";
@@ -150,9 +151,9 @@
 		8C4A109529A41F380008E663 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8C4A109729A41F4E0008E663 /* Extension+UIVIew.swift */,
 				8CEE5DC829A7A22600D67650 /* Extension+UIColor.swift */,
 				8CEE5DCA29A7A23100D67650 /* Extension+UIImage.swift */,
+				8C4A109729A41F4E0008E663 /* Extension+UIVIew.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,11 +228,10 @@
 		8C4A10AF29A429B30008E663 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8C872C5229AAED2E0030EC8D /* Common */,
-				8C872C4F29AAE66B0030EC8D /* KeychainManager */,
-				8C872C4A29AACDB20030EC8D /* UserDefaultsManager */,
 				8C68357829A7F00D002D60A7 /* AuthManager */,
+				8C872C4F29AAE66B0030EC8D /* KeychainManager */,
 				8C4A10B029A429BC0008E663 /* NetworkManager */,
+				8C872C4A29AACDB20030EC8D /* UserDefaultsManager */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -352,11 +352,11 @@
 		8CEE5DC129A7A0E400D67650 /* LoggedIn */ = {
 			isa = PBXGroup;
 			children = (
-				8CEE5DD529A7C0A900D67650 /* DrinksCart */,
-				8CEE5DC629A7A17800D67650 /* Favorites */,
 				8CEE5DC529A7A17400D67650 /* AddDrink */,
-				8CEE5DC429A7A16A00D67650 /* Profile */,
+				8CEE5DD529A7C0A900D67650 /* DrinksCart */,
 				8C4A109F29A421AF0008E663 /* DrinksMenu */,
+				8CEE5DC629A7A17800D67650 /* Favorites */,
+				8CEE5DC429A7A16A00D67650 /* Profile */,
 				8CEE5DBE29A7A0AB00D67650 /* TabBar */,
 			);
 			path = LoggedIn;

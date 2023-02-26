@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct UserKeys {
+public struct UserKeys {
     static let name = "UserName"
     static let surname = "UserSurname"
     static let birthDate = "UserBirthDate"
     static let address = "UserAddress"
 }
 
-struct AuthKeys {
+public struct AuthKeys {
     static let uid = "UserID"
     static let phoneNumber = "UserPhoneNumber"
     static let credentialProvider = "CredentialProvider"
