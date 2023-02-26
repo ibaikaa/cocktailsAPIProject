@@ -51,13 +51,51 @@ final class AuthManager {
                 verificationCode: smsCode
             )
         
-        auth.signIn(with: credential) { result, error in
-            guard let result = result, error == nil else {
+        
+        auth.signIn(with: credential) { [weak self] result, error in
+            guard let self = self else { return }
+            guard let _ = result, error == nil else {
                 completion(false, error)
                 return
             }
-            let user = result.credential
+            
+            if let user = self.auth.currentUser {
+                // Saving data to UserDefaults
+                self.saveDataToUserDefaults(credential: credential, user: user, completion: completion)
+                // Saving data to Keychain
+                self.saveDataToKeychain(credential: credential, user: user, completion: completion)
+            }
             completion(true, nil)
+        }
+    }
+    
+    private func saveDataToKeychain(
+        credential: PhoneAuthCredential,
+        user: User,
+        completion: @escaping (Bool, Error?) -> Void
+    ){
+        do {
+            try KeychainManager.shared.save(credential.provider, forKey: AuthKeys.credentialProvider)
+            try KeychainManager.shared.save(user.phoneNumber, forKey: AuthKeys.phoneNumber)
+            try KeychainManager.shared.save(user.uid, forKey: AuthKeys.uid)
+        } catch {
+            print("Error saving credentials: \(error)")
+            completion(false, error)
+        }
+    }
+    
+    private func saveDataToUserDefaults(
+        credential: PhoneAuthCredential,
+        user: User,
+        completion: @escaping (Bool, Error?) -> Void
+    ) {
+        do {
+            try UserDefaultsManager.shared.save(credential.provider, for: AuthKeys.credentialProvider)
+            try UserDefaultsManager.shared.save(user.phoneNumber, for: AuthKeys.phoneNumber)
+            try UserDefaultsManager.shared.save(user.uid, for: AuthKeys.uid)
+        } catch {
+            print("Failed to save data. \(error)")
+            completion(false, error)
         }
     }
     

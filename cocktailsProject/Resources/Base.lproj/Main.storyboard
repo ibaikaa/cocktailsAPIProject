@@ -80,7 +80,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-QZ-S3B">
-                                        <rect key="frame" x="0.0" y="201" width="353" height="50.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="201" width="353" height="50.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -179,6 +179,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="u2g-zc-tLQ"/>
+                    <connections>
+                        <outlet property="birthDateTextField" destination="aQw-1W-yS4" id="Ab2-aq-Muf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLO-Yj-X6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

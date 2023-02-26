@@ -27,6 +27,8 @@
 		8C68357729A7EFEA002D60A7 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68357629A7EFEA002D60A7 /* SignInViewModel.swift */; };
 		8C68357A29A7F015002D60A7 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68357929A7F015002D60A7 /* AuthManager.swift */; };
 		8C68358B29A94529002D60A7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68358A29A94529002D60A7 /* ProfileViewModel.swift */; };
+		8C872C4C29AACDF10030EC8D /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C4B29AACDF10030EC8D /* UserDefaultsManager.swift */; };
+		8C872C5129AAE6750030EC8D /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C5029AAE6750030EC8D /* KeychainManager.swift */; };
 		8CEE5DC029A7A0C300D67650 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DBF29A7A0C300D67650 /* MainTabBarController.swift */; };
 		8CEE5DC929A7A22600D67650 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DC829A7A22600D67650 /* Extension+UIColor.swift */; };
 		8CEE5DCB29A7A23100D67650 /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DCA29A7A23100D67650 /* Extension+UIImage.swift */; };
@@ -60,6 +62,8 @@
 		8C68357629A7EFEA002D60A7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		8C68357929A7F015002D60A7 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		8C68358A29A94529002D60A7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8C872C4B29AACDF10030EC8D /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		8C872C5029AAE6750030EC8D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		8CEE5DBF29A7A0C300D67650 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8CEE5DC829A7A22600D67650 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		8CEE5DCA29A7A23100D67650 /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 		8C4A10AF29A429B30008E663 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8C872C4F29AAE66B0030EC8D /* KeychainManager */,
+				8C872C4A29AACDB20030EC8D /* UserDefaultsManager */,
 				8C68357829A7F00D002D60A7 /* AuthManager */,
 				8C4A10B029A429BC0008E663 /* NetworkManager */,
 			);
@@ -306,6 +312,22 @@
 				8C68358A29A94529002D60A7 /* ProfileViewModel.swift */,
 			);
 			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		8C872C4A29AACDB20030EC8D /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				8C872C4B29AACDF10030EC8D /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		8C872C4F29AAE66B0030EC8D /* KeychainManager */ = {
+			isa = PBXGroup;
+			children = (
+				8C872C5029AAE6750030EC8D /* KeychainManager.swift */,
+			);
+			path = KeychainManager;
 			sourceTree = "<group>";
 		};
 		8CEE5DBE29A7A0AB00D67650 /* TabBar */ = {
@@ -526,6 +548,8 @@
 				8CEE5DC029A7A0C300D67650 /* MainTabBarController.swift in Sources */,
 				8C68357729A7EFEA002D60A7 /* SignInViewModel.swift in Sources */,
 				8C4A10A829A422140008E663 /* DrinkCell.swift in Sources */,
+				8C872C5129AAE6750030EC8D /* KeychainManager.swift in Sources */,
+				8C872C4C29AACDF10030EC8D /* UserDefaultsManager.swift in Sources */,
 				8C4A10FE29A5B22D0008E663 /* DrinkInfoViewController.swift in Sources */,
 				8C4A10B729A42A0D0008E663 /* Drinks.swift in Sources */,
 				8CEE5DD129A7B81700D67650 /* AddDrinkViewController.swift in Sources */,
