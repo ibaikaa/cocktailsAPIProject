@@ -31,6 +31,7 @@
 		8C872C5129AAE6750030EC8D /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C5029AAE6750030EC8D /* KeychainManager.swift */; };
 		8C872C5429AAED390030EC8D /* KeysStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C5329AAED390030EC8D /* KeysStructs.swift */; };
 		8C872C5D29AB0AB90030EC8D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C5C29AB0AB90030EC8D /* DatabaseManager.swift */; };
+		8C872C6029AB0C220030EC8D /* AddDrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C872C5F29AB0C220030EC8D /* AddDrinkViewModel.swift */; };
 		8CEE5DC029A7A0C300D67650 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DBF29A7A0C300D67650 /* MainTabBarController.swift */; };
 		8CEE5DC929A7A22600D67650 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DC829A7A22600D67650 /* Extension+UIColor.swift */; };
 		8CEE5DCB29A7A23100D67650 /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE5DCA29A7A23100D67650 /* Extension+UIImage.swift */; };
@@ -68,6 +69,7 @@
 		8C872C5029AAE6750030EC8D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		8C872C5329AAED390030EC8D /* KeysStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysStructs.swift; sourceTree = "<group>"; };
 		8C872C5C29AB0AB90030EC8D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8C872C5F29AB0C220030EC8D /* AddDrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewModel.swift; sourceTree = "<group>"; };
 		8CEE5DBF29A7A0C300D67650 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8CEE5DC829A7A22600D67650 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		8CEE5DCA29A7A23100D67650 /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -352,6 +354,14 @@
 			path = DatabaseManager;
 			sourceTree = "<group>";
 		};
+		8C872C5E29AB0C1A0030EC8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C872C5F29AB0C220030EC8D /* AddDrinkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8CEE5DBE29A7A0AB00D67650 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +395,7 @@
 		8CEE5DC529A7A17400D67650 /* AddDrink */ = {
 			isa = PBXGroup;
 			children = (
+				8C872C5E29AB0C1A0030EC8D /* ViewModel */,
 				8CEE5DCF29A7B80E00D67650 /* View */,
 			);
 			path = AddDrink;
@@ -574,6 +585,7 @@
 				8C4A10A829A422140008E663 /* DrinkCell.swift in Sources */,
 				8C872C5129AAE6750030EC8D /* KeychainManager.swift in Sources */,
 				8C872C4C29AACDF10030EC8D /* UserDefaultsManager.swift in Sources */,
+				8C872C6029AB0C220030EC8D /* AddDrinkViewModel.swift in Sources */,
 				8C4A10FE29A5B22D0008E663 /* DrinkInfoViewController.swift in Sources */,
 				8C4A10B729A42A0D0008E663 /* Drinks.swift in Sources */,
 				8CEE5DD129A7B81700D67650 /* AddDrinkViewController.swift in Sources */,

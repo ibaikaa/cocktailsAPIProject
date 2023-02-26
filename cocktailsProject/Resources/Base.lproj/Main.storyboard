@@ -386,6 +386,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="4Iq-gZ-MA0"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="4Kd-Fq-xyU" id="zbN-xb-oKE"/>
+                        <outlet property="nameTextField" destination="Nvl-dz-LtT" id="bCv-eV-rQM"/>
+                        <outlet property="priceTextField" destination="aMD-KS-AL7" id="vcu-Bg-6N1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxp-dd-qCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

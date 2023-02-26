@@ -7,3 +7,34 @@
 
 import FirebaseCore
 import FirebaseFirestore
+
+public struct DatabaseCollection {
+    static let cocktails = "Cocktails"
+}
+
+public struct DatabaseDocument {
+    static let postRequest = "Uploaded With Post Request"
+}
+
+final class DatabaseManager {
+    static let shared = DatabaseManager()
+    
+    private init () { }
+    
+    private let db = Firestore.firestore()
+    
+    public func set(
+        to collection: String,
+        document: String,
+        with data: [String:Any],
+        completion: @escaping (Result<Void, Error>) -> Void
+    ) {
+        db.collection(collection).document(document).setData(data) { error in
+            guard error == nil else {
+                completion( .failure(error!) )
+                return
+            }
+            completion(.success(()))
+        }
+    }
+}
