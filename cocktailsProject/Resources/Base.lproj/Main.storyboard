@@ -149,6 +149,9 @@
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveUsersData:" destination="jmJ-TM-UnI" eventType="touchUpInside" id="hUL-CH-4Sf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LUg-4J-heP"/>
@@ -180,7 +183,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="u2g-zc-tLQ"/>
                     <connections>
+                        <outlet property="addressTextField" destination="FFs-4R-KN3" id="2xh-CI-Wyp"/>
                         <outlet property="birthDateTextField" destination="aQw-1W-yS4" id="Ab2-aq-Muf"/>
+                        <outlet property="nameTextField" destination="JKj-FG-Jem" id="gsK-q9-6qI"/>
+                        <outlet property="surnameTextField" destination="9KF-4w-L8Z" id="V6P-u4-rmv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLO-Yj-X6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

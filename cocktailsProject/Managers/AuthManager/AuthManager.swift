@@ -84,6 +84,7 @@ final class AuthManager {
         }
     }
     
+    // НЕЖЕЛАТЕЛЬНО ТАК СОХРАНЯТЬ ПРИВАТНЫЕ ДАННЫЕ, НО ДЗ ЕСТЬ ДЗ
     private func saveDataToUserDefaults(
         credential: PhoneAuthCredential,
         user: User,
@@ -102,9 +103,27 @@ final class AuthManager {
     public func signOut(completion: @escaping (Bool, Error?) -> Void) {
         do {
             try auth.signOut()
+            deleteDataFromKeychain(completion: completion)
+            deleteDataFromUserDefaults()
             completion(true, nil)
         } catch let signOutError {
             completion(false, signOutError)
         }
+    }
+    
+    private func deleteDataFromKeychain(completion: @escaping (Bool, Error?) -> Void) {
+        do {
+            try KeychainManager.shared.delete(forKey: AuthKeys.credentialProvider)
+            try KeychainManager.shared.delete(forKey: AuthKeys.phoneNumber)
+            try KeychainManager.shared.delete(forKey: AuthKeys.uid)
+        } catch {
+            print("Failed to delete data from kchn. \(error)")
+        }
+    }
+    
+    private func deleteDataFromUserDefaults() {
+        UserDefaultsManager.shared.delete(for: AuthKeys.credentialProvider)
+        UserDefaultsManager.shared.delete(for: AuthKeys.phoneNumber)
+        UserDefaultsManager.shared.delete(for: AuthKeys.uid)
     }
 }

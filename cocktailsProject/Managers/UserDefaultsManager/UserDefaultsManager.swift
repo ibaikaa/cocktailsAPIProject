@@ -7,19 +7,6 @@
 
 import Foundation
 
-struct UserKeys {
-    static let name = "UserName"
-    static let surname = "UserSurname"
-    static let birthDate = "UserBirthDate"
-    static let address = "UserAddress"
-}
-
-struct AuthKeys {
-    static let uid = "UserID"
-    static let phoneNumber = "UserPhoneNumber"
-    static let credentialProvider = "CredentialProvider"
-}
-
 final class UserDefaultsManager {
     static let shared = UserDefaultsManager()
     
@@ -45,7 +32,7 @@ final class UserDefaultsManager {
         return object
     }
     
-    func deleteValue(for key: String) {
+    func delete(for key: String) {
         defaults.removeObject(forKey: key)
     }
 }

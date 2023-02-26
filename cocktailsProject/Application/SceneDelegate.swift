@@ -19,18 +19,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Define starter screen
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if Auth.auth().currentUser == nil {
-            let vc = storyboard
-                .instantiateViewController(
-                    withIdentifier: SignInViewController.identifier
-                )
-            window?.rootViewController = vc
-        } else {
+        
+        if
+            let _ = try? KeychainManager.shared.retrieve(forKey: AuthKeys.credentialProvider),
+            let _ = try? KeychainManager.shared.retrieve(forKey: AuthKeys.uid),
+            let _ = try? KeychainManager.shared.retrieve(forKey: AuthKeys.phoneNumber) {
             let tabBarVC = storyboard
                 .instantiateViewController(
                     withIdentifier: MainTabBarController.identifier
                 )
             window?.rootViewController = tabBarVC
+        } else {
+            let vc = storyboard
+                .instantiateViewController(
+                    withIdentifier: SignInViewController.identifier
+                )
+            window?.rootViewController = vc
         }
     }
 
