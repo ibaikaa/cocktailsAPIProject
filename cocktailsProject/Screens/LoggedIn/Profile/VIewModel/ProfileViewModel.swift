@@ -72,27 +72,18 @@ final class ProfileViewModel {
     }
     
     public func signOut() {
-        authManager.signOut { [weak self] success, error in
-            guard let strongSelf = self else { return }
-            guard success, error == nil else {
-                strongSelf.showAlert?(
-                    "Error",
-                    error!.localizedDescription,
-                    nil
-                )
-                return
-            }
-            
-            if success {
-                strongSelf.showAlert? (
+        authManager.signOut { [weak self] result in
+            switch result {
+            case .success():
+                self?.showAlert? (
                     "Success",
                     "Successfully signed out. Returning you to the Sign-In page",
-                    strongSelf.goToSignInPage
+                    self?.goToSignInPage
                 )
-            } else {
-                strongSelf.showAlert? (
+            case .failure(let error):
+                self?.showAlert? (
                     "Error",
-                    "Unexpected error occured. Please, try again.",
+                    error.localizedDescription,
                     nil
                 )
             }
