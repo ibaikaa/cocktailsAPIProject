@@ -30,8 +30,10 @@ final class SignInViewModel {
             return
         }
         
-        authManager.checkPhoneNumberAndSendSMSCode(phoneNumber: phoneNumber) { [weak self] success, error in
-            if let error = error {
+        authManager.tryToSendSMSCode(phoneNumber: phoneNumber) { [weak self] result in
+            switch result {
+            case .success(): ()
+            case .failure(let error):
                 self?.showAlert?(
                     "Error",
                     error.localizedDescription,
@@ -53,25 +55,19 @@ final class SignInViewModel {
             return
         }
         
-        authManager.verifyCodeAndTryToSignIn(smsCode: smsCode) { [weak self] success, error in
-            if let error = error {
-                self?.showAlert?(
-                    "Error",
-                    error.localizedDescription,
-                    nil
-                )
-            }
-            
-            if success {
+        authManager.tryToSignIn(smsCode: smsCode) { [weak self] result in
+            switch result {
+            case .success():
                 self?.showAlert?(
                     "Success",
                     "Succesfully signed up with phone number. Getting you to the main page.",
                     self?.goToMainPage
                 )
-            } else {
+
+            case .failure(let error):
                 self?.showAlert?(
                     "Error",
-                    "Unexpected error occured. Please, try again later",
+                    error.localizedDescription,
                     nil
                 )
             }
