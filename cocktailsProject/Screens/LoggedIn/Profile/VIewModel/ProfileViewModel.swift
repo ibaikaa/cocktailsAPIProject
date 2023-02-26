@@ -46,6 +46,11 @@ final class ProfileViewModel {
             try defaults.save(surname, for: UserKeys.surname)
             try defaults.save(birthDate, for: UserKeys.birthDate)
             try defaults.save(address, for: UserKeys.address)
+            showAlert? (
+                "Success!",
+                "Succefully saved your data!",
+                nil
+            )
         } catch {
             showAlert?(
                 "Error",
