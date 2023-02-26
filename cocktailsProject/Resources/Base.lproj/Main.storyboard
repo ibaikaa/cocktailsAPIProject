@@ -368,6 +368,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="blackProjectShadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createDrink:" destination="i3M-jj-upi" eventType="touchUpInside" id="XfN-7n-k4k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bvc-nc-gUD"/>

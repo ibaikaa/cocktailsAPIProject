@@ -23,13 +23,12 @@ final class DatabaseManager {
     
     private let db = Firestore.firestore()
     
-    public func set(
+    public func add(
         to collection: String,
-        document: String,
         with data: [String:Any],
         completion: @escaping (Result<Void, Error>) -> Void
     ) {
-        db.collection(collection).document(document).setData(data) { error in
+        db.collection(collection).addDocument(data: data) { error in
             guard error == nil else {
                 completion( .failure(error!) )
                 return
